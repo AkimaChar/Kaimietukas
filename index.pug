@@ -1,10 +1,69 @@
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=, initial-scale=1.0")
-        link(rel="stylesheet", href="style\style.css")
-        link(rel="stylesheet", href="script\script.js")
+        include mixins/header.pug
+        +head
         title Document
-    body 
+    body
+        header.header
+            a.logo(href="#")
+                img.logo-image
+            nav.nav-bar
+                a.nav-bar__button(href="#")
+                a.nav-bar__button(href="#")
+                a.nav-bar__button(href="#")
+        section.wrap-container.hello-screen
+            h1.hello-screen__text
+            hr.hello-screen__line
+        section.wrap-container.intro-screen
+            img.intro-screen__image
+            div.intro-text
+                p.intro-text__paragraph 
+                p.intro-text__paragraph 
+        section.wrap_container.facts-screen 
+            div.google-map
+            .facts-text 
+                span.facts-text__headline
+                ul.facts-text__list
+                    li 
+                    li 
+                    li 
+                    li 
+                    li 
+                    li 
+                    li 
+                    li 
+                    li 
+                    li 
+        section.wrap_container.advantages_screen
+            .adv-group
+                .adv-card
+                    img.adv-card__image(src="", alt="advantages image")
+                    span.adv-card__headline
+                    p.adv-card__paragraph
+                .adv-card
+                    img.adv-card__image(src="", alt="advantages image")
+                    span.adv-card__headline
+                    p.adv-card__paragraph
+                .adv-card
+                    img.adv-card__image(src="", alt="advantages image")
+                    span.adv-card__headline
+                    p.adv-card__paragraph
+            .adv-group
+                .adv-card
+                    img.adv-card__image(src="", alt="advantages image")
+                    span.adv-card__headline
+                    p.adv-card__paragraph
+                .adv-card
+                    img.adv-card__image(src="", alt="advantages image")
+                    span.adv-card__headline
+                    p.adv-card__paragraph
+                .adv-card
+                    img.adv-card__image(src="", alt="advantages image")
+                    span.adv-card__headline
+                    p.adv-card__paragraph
+            
+
+        
+
+

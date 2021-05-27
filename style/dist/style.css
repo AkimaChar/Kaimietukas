@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+.wrap_container {
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: 20;
+  background-color: none;
+}

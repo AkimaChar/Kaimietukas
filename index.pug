@@ -1,20 +1,30 @@
 doctype html
-html(lang="en")
+html(lang="lt")
     head
-        include mixins/header.pug
-        +head
-        title Document
-    body
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="../style/dist/style.css")
+        script(src="../script/dist/script.dev.js" defer) 
+
+        title Kaimietukas
+    body#body
         header.header
             a.logo(href="#")
-                img.logo-image
+                img.logo__image(src="../img/kaimietukas-logo-5.png")
+                span.logo__text Kaimietukas
             nav.nav-bar
-                a.nav-bar__button(href="#")
-                a.nav-bar__button(href="#")
-                a.nav-bar__button(href="#")
-        section.wrap-container.hello-screen
-            h1.hello-screen__text
-            hr.hello-screen__line
+                a.nav-bar__button--active(href="#") Home
+                a.nav-bar__button(href="#") Išsirinkite sklypą
+                a.nav-bar__button(href="#") Susisiekime
+        section.hello-screen
+            .hello-screen__wrapper#bgToScroll
+                .wrap-container.hello-screen__content
+                    h1.hello-screen__text SKLYPAI SODYBOMS PRIE NEVĖŽIO
+                    hr.hello-screen__line
         section.wrap-container.intro-screen
             img.intro-screen__image
             div.intro-text

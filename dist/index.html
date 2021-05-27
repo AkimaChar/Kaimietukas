@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
   <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
-        <link rel="stylesheet" href="style/dist/style.css">
-        <link rel="stylesheet" href="script/dist/script.js">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/dist/style.css">
+    <script src="../script/dist/script.dev.js" defer> </script>
+    <title>Kaimietukas</title>
   </head>
-  <body>
-    <header class="header"><a class="logo" href="#"><img class="logo-image"></a>
-      <nav class="nav-bar"><a class="nav-bar__button" href="#"></a><a class="nav-bar__button" href="#"></a><a class="nav-bar__button" href="#"></a></nav>
+  <body id="body">
+    <header class="header"><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"><span class="logo__text">Kaimietukas</span></a>
+      <nav class="nav-bar"><a class="nav-bar__button--active" href="#">Home</a><a class="nav-bar__button" href="#">Išsirinkite sklypą</a><a class="nav-bar__button" href="#">Susisiekime</a></nav>
     </header>
-    <section class="wrap-container hello-screen">
-      <h1 class="hello-screen__text"></h1>
-      <hr class="hello-screen__line">
+    <section class="hello-screen">
+      <div class="hello-screen__wrapper" id="bgToScroll">
+        <div class="wrap-container hello-screen__content">
+          <h1 class="hello-screen__text">SKLYPAI SODYBOMS PRIE NEVĖŽIO</h1>
+          <hr class="hello-screen__line">
+        </div>
+      </div>
     </section>
     <section class="wrap-container intro-screen"><img class="intro-screen__image">
       <div class="intro-text">

@@ -1,0 +1,120 @@
+#include <iostream>
+#pragma warning(disable : 4996)
+using namespace std;
+
+const int N = 10;
+
+class Catalog {
+private:
+    char* processor_type = (char*)malloc(sizeof(char));
+    int  processor_ram;
+    float  processor_rem;
+    float  processor_tickrate;
+
+public:
+    Catalog(string, float, float, int);
+    Catalog(const Catalog&);
+    Catalog();
+    ~Catalog();
+
+    char* getType() {
+        return processor_type;
+    }
+    string setType(string type) {
+        processor_type = (char*)realloc(processor_type, (type.length() + 1) * sizeof(char));
+        strcpy(processor_type, type.c_str());
+        return processor_type;
+    }
+
+    int getRAM() {
+        return processor_ram;
+    }
+    int setRAM(int ram) {
+        processor_ram = ram;
+        return processor_ram;
+    }
+
+    float  getREM() {
+        return processor_rem;
+    }
+    float setREM(float rem) {
+        processor_rem =  rem;
+        return processor_rem;
+    }
+
+    float getTickrate() {
+        return processor_tickrate;
+    }
+    float setTickrate(float tickrate) {
+        processor_tickrate = tickrate;
+        return processor_tickrate;
+    }
+
+    void getCatalog() {
+        cout << "Processor type: " << getType() << endl;
+        cout << "Tickrate: " << getType() << endl;
+        cout << "RAM: " << getRAM() << endl;
+        cout << "REM: " << getREM() <<  endl;
+        cout << endl;
+    }
+    void Set(string set_type, float set_rem, float set_tickrate, int set_ram) {
+        setType(set_type);
+        setRAM(set_ram);
+        setREM(set_rem);
+        setTickrate(set_tickrate);
+    };
+};
+
+Catalog::Catalog() {
+    Set("Не задан", 0, 0, 0);
+}
+
+Catalog::~Catalog() {
+    cout << "desconstruct: " << this->getType() << endl;
+}
+
+Catalog::Catalog(const Catalog& obj) {
+    Set(obj.processor_type, obj.processor_ram, obj.processor_tickrate, obj.processor_rem);
+    cout << "Copy cosntructor" << endl;
+    cout << endl;
+}
+
+Catalog::Catalog(string type, float tickrate, float rem, int ram) {
+    Set(type, ram, tickrate, rem);
+    cout << "Paremetric cosntructor" << endl;
+    cout << endl;
+};
+
+
+int main() {
+
+    Catalog Catalog_("Intel", 255.23, 56.5, 32);
+
+    Catalog_.getCatalog();
+
+    Catalog emptyCatalog(Catalog_);
+
+    emptyCatalog.setRAM(5000);
+
+    emptyCatalog.setType("Amd");
+
+    emptyCatalog.getRAM();
+
+    emptyCatalog.getType();
+
+    Catalog* Catalog_p = &Catalog_;
+
+    float (Catalog:: * p)();
+
+    p = &Catalog::getREM;
+
+    cout << "RAM pointer " << (Catalog_.*p)();
+
+    cout << endl;cout << endl;
+
+    cout << "Obj pointer " << (*(Catalog_p).*p)();
+
+    cout << endl;cout << endl;
+
+    return 0;
+}

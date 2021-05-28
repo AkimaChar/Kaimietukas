@@ -3,3 +3,7 @@ window.addEventListener('scroll', function() {
     h_bg.style.backgroundPositionY = window.pageYOffset-420 + "px";
     h_bg.style.transform= "translateY(" + window.pageYOffset*0.1 + "px)";
 })
+
+window.addEventListener('scroll', function() {
+    
+})

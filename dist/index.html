@@ -14,9 +14,9 @@
   </head>
   <body id="body">
     <header class="header" id="header"><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"/><span class="logo__text">Kaimietukas</span></a>
-      <nav class="nav-bar" id="nav"><a class="nav-bar__button--active" href="#">Home</a><a class="nav-bar__button" href="#">Išsirinkite sklypą</a><a class="nav-bar__button" href="#">Susisiekime</a></nav>
+      <nav class="nav-bar" id="nav"><a class="nav-bar__button--active scroll-to" href="#home">Home</a><a class="nav-bar__button scroll-to" href="#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="#contact">Susisiekime</a></nav>
     </header>
-    <section class="hello-screen">
+    <section class="hello-screen" id="home">
       <div class="hello-screen__wrapper" id="bgToScroll">
         <div class="wrap_container hello-screen__content">
           <h1 class="hello-screen__text">SKLYPAI SODYBOMS PRIE NEVĖŽIO</h1>
@@ -175,7 +175,8 @@
         <div class="photo"><img src="../img/gallery2.jpg"/></div>
       </div>
     </section>
-    <section class="wrap_container area-screen">
+    <section class="wrap_container area-screen"> 
+      <div id="sectors"></div>
       <h2 class="section-headline">IŠSIRINKITE SAVO SKLYPĄ</h2><img class="area-screen__photo" src="../img/sectors.jpg"/>
       <table class="area-prices-list">
         <tr class="head"> 
@@ -228,7 +229,7 @@
         </tr>
       </table>
     </section>
-    <section class="wrap_container form-screen"><img class="form-section__image" src="../img/seller.jpg" alt="seller Gediminas"/>
+    <section class="wrap_container form-screen" id="contact"><img class="form-section__image" src="../img/seller.jpg" alt="seller Gediminas"/>
       <div> 
         <h1 class="form-title">TURITE KLAUSIMŲ? SUSISIEKIME</h1>
         <p class="form-subtitle">Įveskite savo kontaktinius duomenis ir mes netrukus susisieksime su Jumis!</p>
@@ -240,6 +241,6 @@
         </form>
       </div>
     </section>
-    <footer class="footer">2021<a class="footer__link" href="#">Kaimietukas</a><span>|</span><a class="footer__link" href="#">Privatumo politika </a></footer>
+    <footer class="footer">2021<a class="footer__link scroll-to" href="#home">Kaimietukas</a><span>|</span><a class="footer__link" href="./privacy.html">Privatumo politika </a></footer>
   </body>
 </html>

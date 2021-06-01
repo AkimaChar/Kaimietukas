@@ -17,10 +17,10 @@ html(lang="lt")
                 img.logo__image(src="../img/kaimietukas-logo-5.png")
                 span.logo__text Kaimietukas
             nav.nav-bar#nav
-                a.nav-bar__button--active(href="#") Home
-                a.nav-bar__button(href="#") Išsirinkite sklypą
-                a.nav-bar__button(href="#") Susisiekime
-        section.hello-screen
+                a.nav-bar__button--active.scroll-to(href="#home") Home
+                a.nav-bar__button.scroll-to(href="#sectors") Išsirinkite sklypą
+                a.nav-bar__button.scroll-to(href="#contact") Susisiekime
+        section.hello-screen#home
             .hello-screen__wrapper#bgToScroll
                 .wrap_container.hello-screen__content
                     h1.hello-screen__text SKLYPAI SODYBOMS PRIE NEVĖŽIO
@@ -212,7 +212,8 @@ html(lang="lt")
                     img(src="../img/gallery3.jpg")
                 .photo
                     img(src="../img/gallery2.jpg") 
-        section.wrap_container.area-screen
+        section.wrap_container.area-screen 
+            #sectors
             h2.section-headline
                 |IŠSIRINKITE SAVO SKLYPĄ
             img.area-screen__photo(src="../img/sectors.jpg")
@@ -257,7 +258,7 @@ html(lang="lt")
                     td 96.61		
                     td 16 500
                     td Laisvas
-        section.wrap_container.form-screen
+        section.wrap_container.form-screen#contact
             img.form-section__image(src="../img/seller.jpg" alt="seller Gediminas")
             div 
                 h1.form-title
@@ -272,9 +273,9 @@ html(lang="lt")
                         |SIŲSTI
         footer.footer
             | 2021
-            a.footer__link(href="#") Kaimietukas
+            a.footer__link.scroll-to(href="#home") Kaimietukas
             span |
-            a.footer__link(href="#") Privatumo politika 
+            a.footer__link(href="./privacy.html") Privatumo politika 
 
 
 

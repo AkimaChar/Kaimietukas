@@ -1,16 +1,15 @@
-doctype html
+adoctype html
 html(lang="lt")
     head
         meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-        link(rel="stylesheet", href="../style/dist/style.css")
+        link(rel="stylesheet" href="../style/dist/style.css")
         script(src="../script/dist/script.dev.js" defer) 
-
         title Kaimietukas
     body#body
         header.header#header
@@ -27,153 +26,255 @@ html(lang="lt")
                     h1.hello-screen__text SKLYPAI SODYBOMS PRIE NEVĖŽIO
                     hr.hello-screen__line
         section.intro-screen.wrap_container
-            img.intro-screen__image
+            div.intro-screen__image
             div.intro-text
                 p.intro-text__paragraph 
                     |GYVENTI, DIRBTI, MAUDYTIS,
                     br
                     | IRKLUOTI, ŽVEJOTI, ILSĖTIS.
-                p.intro-text__paragraph 
+                p.intro-text__text
+                    |Nevėžio prakrantėje parduodami sklypai, skirti Jūsų "antrųjų namų" statybai. Arba "pirmųjų" - sprendžiate Jūs!
+                p.intro-text__text
+                    |Jūsų terasose atsivers vaizdas į Nevėžio upės slėnį, nes statybų zonos numatytos aukščiausioje teritorijos dalyje.
+                p.intro-text__text
+                    |Dieną mėgaukitės Pietinės Saulės spinduliais. Vakarais stebėkite besileidžiančią Saulę upės horizonte.
+                p.intro-text__text
+                    |Įsirenkite pirtį upės prieigose ir vėsinkitės gaiviu upės vandeniu nuo privataus liepto.
+                p.intro-text__text
+                    |Būsite kaime, bet nenutolsite nuo civilizacijos: už 9 min. kelio Kėdainiuose gausite visas miesto paslaugas.
         section.facts-screen.wrap_container
-            div.google-map
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2269.9269855184334!2d24.007866915883977!3d55.32436108044095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDE5JzI3LjciTiAyNMKwMDAnMzYuMiJF!5e0!3m2!1sru!2sru!4v1622544491171!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             .facts-text 
                 span.facts-text__headline
+                    |PAGRINDINIAI FAKTAI
                 ul.facts-text__list
                     li 
-                    li 
-                    li 
-                    li 
-                    li 
-                    li 
-                    li 
-                    li 
-                    li 
-                    li 
+                        <a href="https://www.google.com/maps/place/55°19'27.7"N+24°00'36.8"E/@55.324411,24.010589,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d55.324351!4d24.010213?hl=en"> Melioratorių g., Vilainiai, Kėdainių r.</a>
+                    li Paskirtis - rekreacinės teritorijos
+                    li Elektra, asfaltas, autobuso stotelė
+                    li Nuosava Nevėžio upės pakrantė
+                    li Jūsų pamėgta Pietų - Vakarų Saulė
+                    li Galima pastatų statyba
+                    li Galima liepto statyba upės pakrantėje
+                    li Galima pirčių statyba paupyje
+                    li Čia kimba žuvys
+                    li Arti Kėdainių, netoli Kauno
         section.wrap_container.advantages_screen
-            span.section-headline
+            h2.section-headline
+                |PRIVALUMAI
             div.card-wrapper
-                .adv-group
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                .adv-group
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                .adv-group
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
-                .adv-group
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
+                div.card
+                    div.card__image
+                        img(src="../img/galima-statiba.jpg" alt="advantages image")
+                    span.card__headline
+                        |GALIMA STATYBA
+                    div.card-text
+                        p.card-text__paragraph
+                            |Rasti sklypą prie upės ar ežero, kur statyba nedraužiama, yra didelis iššūkis.
+                        p.card-text__paragraph
+                            |Šį galvosūkį išsprendėme už Jus!
+                        p.card-text__paragraph
+                            |Sklypuose galima statyti pastatus: sodybas, viešbučius arba kempingus.
+                div.card
+                    div.card__image
+                        img(src="../img/pirtis-paupije.jpg" alt="advantages image")
+                    span.card__headline
+                        |PIRTIS PAUPYJE
+                    div.card-text
+                        p.card-text__paragraph
+                            |Žemutinėje sklypų dalyje galima lengvų konstrukcijų statinių statyba (pavėsinės, pirtys).
+                        p.card-text__paragraph
+                            |Įsirenkite pirtį upės prieigose ir vėsinkitės gaiviu upės vandeniu.
+                div.card
+                    div.card__image
+                        img(src="../img/privatus-lieptas.jpg" alt="advantages image")
+                    span.card__headline
+                        |PRIVATUS LIEPTAS
+                    div.card-text
+                        p.card-text__paragraph
+                            |Lieptas - didelis išskirtinumas. Daugelyje vietų lieptų statyba draudžiama. Tačiau Jums tai negalioja!
+                        p.card-text__paragraph
+                            |Su savivaldybe suderinome liepto statybos vietą kvartalo gyventojams.
+                div.card
+                    div.card__image
+                        img(src="../img/panorama.jpg" alt="advantages image")
+                    span.card__headline
+                        |PANORAMA
+                    div.card-text
+                        p.card-text__paragraph
+                            |Jūsų terasose atsivers vaizdas į Nevėžio upės slėnį, nes statybų zonos numatytos aukščiausioje teritorijos dalyje.
+                div.card
+                    div.card__image
+                        img(src="../img/saules-kryptis.jpg" alt="advantages image")
+                    span.card__headline
+                        |SAULĖS KRYPTIS
+                    div.card-text
+                        p.card-text__paragraph
+                            |Dieną mėgaukitės Pietinės Saulės spinduliais. Vakarais stebėkite besileidžiančią Saulę upės horizonte.
+                        p.card-text__paragraph
+                            |Paryčiais Saulė pradeda kilti nuo gatvės pusės. Dienos metu ji pakyla tiesiai virš sklypų, o vakare nusileidžia "į upę".
+                div.card
+                    div.card__image
+                        img(src="../img/nuosava-pakrante.jpg" alt="advantages image")
+                    span.card__headline
+                        |NUOSAVA PAKRANTĖ
+                    div.card-text
+                        p.card-text__paragraph
+                            |Visi sklypai ribojasi su Nevėžio upe. Turėsite privatų tiesioginį patekimą prie upės.
+            div.card-wrapper
+                div.card
+                    div.card__image
+                        img(src="../img/fishes.jpg" alt="advantages image")
+                    span.card__headline
+                        |ČIA KIMBA ŽUVYS
+                    div.card-text
+                        p.card-text__paragraph
+                            |Ištraukite meškeres, nes čia - kimba! Čia migruoja karšiai ir žiobriai, žvejyba aktyvi balandžio - rugpjūčio mėn.
+                        p.card-text__paragraph
+                            |Žvejokite patys, kvieskite svečius. Po sėkmingos žūklės vaišinkitės pačių sugauta šviežia žuvimi, išrūkintoje jūsų privačioje rūkykloje.
+                div.card
+                    div.card__image
+                        img(src="../img/river-boat.jpg" alt="advantages image")
+                    span.card__headline
+                        |KELIAUKITE BAIDARE
+                    div.card-text
+                        p.card-text__paragraph
+                            |Keliaukite baidarėmis su šeima ir draugais. Arba išnuomokite savo baidares kitiems.
+                        p.card-text__paragraph
+                            |Nevėžio upe vykdomi plaukimai baidarėmis Kaune, Krekenavoje ir Panevėžyje.
+                        p.card-text__paragraph
+                            |Gal būsite pirmieji pasiūlę baidarių nuomą Kėdainiškiams?
+                div.card
+                    div.card__image
+                        img(src="../img/street.jpg" alt="advantages image")
+                    span.card__headline
+                        |ARTI MIESTO
+                    div.card-text
+                        p.card-text__paragraph
+                            |Būsite kaime, bet nenutolsite nuo civilizacijos: už 9 min. kelio Kėdainiuose gausite visas miesto paslaugas.
                         ul
-                            li
-                    .adv-card
-                        img.adv-card__image(src="", alt="advantages image")
-                        span.adv-card__headline
-                        p.adv-card__paragraph
+                            li Išpuoselėtas senamiestis
+                            li Didieji prekybos centrai 
+                            li Maitinimas
+                            li Visos kasdienės paslaugos
+                            li Ligoninė ir poliklinika
+                            li Lankytini objektai ir pramogos
+                div.card
+                    div.card__image
+                        img(src="../img/map-static.jpg" alt="advantages image")
+                    span.card__headline
+                        |GREITAS SUSISIEKIMAS
+                    div.card-text
+                        p.card-text__paragraph
+                            |Nuo Kauno m. centro iki sklypo - 1 val. kelio greitkeliu A1.
                         ul
-                            li
+                            li Kaunas - 60 km (1 val.)
+                            li Kėdainiai - 5 km (9 min.)
+                            li Jonava - 40 km (30 min.)
+                            li Panevėžys - 60 km (40 min.)
+                            li Šiauliai - 100 km (1 val. 20 min.)
+                            li Vilnius - 150 km (1 val. 40 min.)
         section.wrap_container.infrastructure-screen
-            span.section-headline
-            .card-wrapper 
-                .infr-card
-                    img.adv-card__image(src="", alt="advantages image")
-                    span.adv-card__headline
-                    p.adv-card__paragraph
-                .infr-card
-                    img.adv-card__image(src="", alt="advantages image")
-                    span.adv-card__headline
-                    p.adv-card__paragraph
-                .infr-card
-                    img.adv-card__image(src="", alt="advantages image")
-                    span.adv-card__headline
-                    p.adv-card__paragraph
+            h2.section-headline
+                |INFRASTRUKTŪRA
+            div.card-wrapper
+                div.card
+                    div.card__image
+                        img(src="../img/electro.jpg" alt="infrastructure image")
+                    span.card__headline
+                        |ELEKTRA
+                    div.card-text
+                        p.card-text__paragraph
+                            |Kiekvienas sklypas pajungtas į ESO tinklą.
+                div.card
+                    div.card__image
+                        img(src="../img/road.jpg" alt="infrastructure image")
+                    span.card__headline
+                        |ASFALTAS
+                    div.card-text
+                        p.card-text__paragraph
+                            |Asfaltuota Melioratorių g. ribojasi su sklypu.
+                div.card
+                    div.card__image
+                        img(src="../img/road-sign.jpg" alt="infrastructure image")
+                    span.card__headline
+                        |AUTOBUSAS
+                    div.card-text
+                        p.card-text__paragraph
+                            |Autobusų stotelė prie pat sklypo ribos.
         section.wrap_container.gallery-screen
-            span.section-headline
+            h2.section-headline
+                |NUOTRAUKŲ GALERIJA
             .photo-group
-                .photo-group.vertical
-                    img.photo-group__image--vert(src="", alt="")
-                    img.photo-group__image--vert(src="", alt="")
-                img.photo-group__image(src="", alt="")    
+                .photo
+                    img(src="../img/river1.jpg")
+                .photo
+                    img(src="../img/gallery3.jpg")
+                .photo
+                    img(src="../img/gallery2.jpg") 
         section.wrap_container.area-screen
-            span.section-headline
-            img.area-screen__photo
+            h2.section-headline
+                |IŠSIRINKITE SAVO SKLYPĄ
+            img.area-screen__photo(src="../img/sectors.jpg")
             table.area-prices-list
+                tr.head 
+                    td Sklypas
+                    td Plotas, a
+                    td Kaina, €
+                    td Būsena
                 tr
                     td 1
-                    td 
-                    td 
-                    td 
+                    td 66.73				
+                    td 13 400
+                    td Laisvas
                 tr
                     td 2
-                    td 
-                    td 
-                    td 
+                    td 70.22				
+                    td 14 050
+                    td Laisvas
                 tr
                     td 3
-                    td 
-                    td 
-                    td 
+                    td 71.39		
+                    td 14 300
+                    td Laisvas
                 tr
                     td 4
-                    td 
-                    td 
-                    td 
+                    td 78.21		
+                    td 14 950
+                    td Laisvas
                 tr
                     td 5
-                    td 
-                    td 
-                    td 
+                    td 85.64		
+                    td 15 500
+                    td Laisvas
                 tr
                     td 6
-                    td 
-                    td 
-                    td 
+                    td 87.72		
+                    td 15 900
+                    td Laisvas
                 tr
                     td 7
-                    td 
-                    td 
-                    td 
+                    td 96.61		
+                    td 16 500
+                    td Laisvas
         section.wrap_container.form-screen
-            img.form-section__image(src="", alt="seller Gediminas")
-            span.form-title
-            span.form-subtitle
-            form(method="POST")
-                input(type="name" name="name" placeholder="")
-                input(type="email" name="email" placeholder="")
-                input(type="tel" name="number" placeholder="")
-                button(type="sumbit")
+            img.form-section__image(src="../img/seller.jpg" alt="seller Gediminas")
+            div 
+                h1.form-title
+                    |TURITE KLAUSIMŲ? SUSISIEKIME
+                p.form-subtitle
+                    |Įveskite savo kontaktinius duomenis ir mes netrukus susisieksime su Jumis!
+                form(method="POST")
+                    input(type="name" name="name" placeholder="Jūsų vardas")
+                    input(type="email" name="email" placeholder="Jūsų el. paštas")
+                    input(type="tel" name="number" placeholder="Jūsų telefono numeris")
+                    button(type="sumbit")
+                        |SIŲSTI
         footer.footer
             | 2021
-            a.footer__link(href="#") 
-            a.footer__link(href="#") 
+            a.footer__link(href="#") Kaimietukas
+            span |
+            a.footer__link(href="#") Privatumo politika 
 
 
 

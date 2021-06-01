@@ -1,172 +1,245 @@
-<!DOCTYPE html>
+
+<adoctype>html</adoctype>
 <html lang="lt">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/dist/style.css">
-    <script src="../script/dist/script.dev.js" defer> </script>
+    <link rel="stylesheet" href="../style/dist/style.css"/>
+    <script src="../script/dist/script.dev.js" defer="defer"> </script>
     <title>Kaimietukas</title>
   </head>
   <body id="body">
-    <header class="header" id="header"><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"><span class="logo__text">Kaimietukas</span></a>
+    <header class="header" id="header"><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"/><span class="logo__text">Kaimietukas</span></a>
       <nav class="nav-bar" id="nav"><a class="nav-bar__button--active" href="#">Home</a><a class="nav-bar__button" href="#">Išsirinkite sklypą</a><a class="nav-bar__button" href="#">Susisiekime</a></nav>
     </header>
     <section class="hello-screen">
       <div class="hello-screen__wrapper" id="bgToScroll">
         <div class="wrap_container hello-screen__content">
           <h1 class="hello-screen__text">SKLYPAI SODYBOMS PRIE NEVĖŽIO</h1>
-          <hr class="hello-screen__line">
+          <hr class="hello-screen__line"/>
         </div>
       </div>
     </section>
-    <section class="intro-screen wrap_container"><img class="intro-screen__image">
+    <section class="intro-screen wrap_container">
+      <div class="intro-screen__image"></div>
       <div class="intro-text">
         <p class="intro-text__paragraph">
-           GYVENTI, DIRBTI, MAUDYTIS,<br>IRKLUOTI, ŽVEJOTI, ILSĖTIS.</p>
-        <p class="intro-text__paragraph"> </p>
+           GYVENTI, DIRBTI, MAUDYTIS,<br/>IRKLUOTI, ŽVEJOTI, ILSĖTIS.</p>
+        <p class="intro-text__text">Nevėžio prakrantėje parduodami sklypai, skirti Jūsų "antrųjų namų" statybai. Arba "pirmųjų" - sprendžiate Jūs!</p>
+        <p class="intro-text__text">Jūsų terasose atsivers vaizdas į Nevėžio upės slėnį, nes statybų zonos numatytos aukščiausioje teritorijos dalyje.</p>
+        <p class="intro-text__text">Dieną mėgaukitės Pietinės Saulės spinduliais. Vakarais stebėkite besileidžiančią Saulę upės horizonte.</p>
+        <p class="intro-text__text">Įsirenkite pirtį upės prieigose ir vėsinkitės gaiviu upės vandeniu nuo privataus liepto.</p>
+        <p class="intro-text__text">Būsite kaime, bet nenutolsite nuo civilizacijos: už 9 min. kelio Kėdainiuose gausite visas miesto paslaugas.</p>
       </div>
     </section>
-    <section class="facts-screen wrap_container">
-      <div class="google-map"></div>
-      <div class="facts-text"> <span class="facts-text__headline"></span>
+    <section class="facts-screen wrap_container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2269.9269855184334!2d24.007866915883977!3d55.32436108044095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDE5JzI3LjciTiAyNMKwMDAnMzYuMiJF!5e0!3m2!1sru!2sru!4v1622544491171!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="facts-text"> <span class="facts-text__headline">PAGRINDINIAI FAKTAI</span>
         <ul class="facts-text__list">
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
+          <li>
+             <a href="https://www.google.com/maps/place/55°19'27.7"N+24°00'36.8"E/@55.324411,24.010589,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d55.324351!4d24.010213?hl=en"> Melioratorių g., Vilainiai, Kėdainių r.</a></li>
+          <li>Paskirtis - rekreacinės teritorijos</li>
+          <li>Elektra, asfaltas, autobuso stotelė</li>
+          <li>Nuosava Nevėžio upės pakrantė</li>
+          <li>Jūsų pamėgta Pietų - Vakarų Saulė</li>
+          <li>Galima pastatų statyba</li>
+          <li>Galima liepto statyba upės pakrantėje</li>
+          <li>Galima pirčių statyba paupyje</li>
+          <li>Čia kimba žuvys</li>
+          <li>Arti Kėdainių, netoli Kauno</li>
         </ul>
       </div>
     </section>
-    <section class="wrap_container advantages_screen"><span class="section-headline"></span>
+    <section class="wrap_container advantages_screen">
+      <h2 class="section-headline">PRIVALUMAI</h2>
       <div class="card-wrapper">
-        <div class="adv-group">
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
-          </div>
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
-          </div>
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
+        <div class="card">
+          <div class="card__image"><img src="../img/galima-statiba.jpg" alt="advantages image"/></div><span class="card__headline">GALIMA STATYBA</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Rasti sklypą prie upės ar ežero, kur statyba nedraužiama, yra didelis iššūkis.</p>
+            <p class="card-text__paragraph">Šį galvosūkį išsprendėme už Jus!</p>
+            <p class="card-text__paragraph">Sklypuose galima statyti pastatus: sodybas, viešbučius arba kempingus.</p>
           </div>
         </div>
-        <div class="adv-group">
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
-          </div>
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
-          </div>
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
+        <div class="card">
+          <div class="card__image"><img src="../img/pirtis-paupije.jpg" alt="advantages image"/></div><span class="card__headline">PIRTIS PAUPYJE</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Žemutinėje sklypų dalyje galima lengvų konstrukcijų statinių statyba (pavėsinės, pirtys).</p>
+            <p class="card-text__paragraph">Įsirenkite pirtį upės prieigose ir vėsinkitės gaiviu upės vandeniu.</p>
           </div>
         </div>
-        <div class="adv-group">
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
-          </div>
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
+        <div class="card">
+          <div class="card__image"><img src="../img/privatus-lieptas.jpg" alt="advantages image"/></div><span class="card__headline">PRIVATUS LIEPTAS</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Lieptas - didelis išskirtinumas. Daugelyje vietų lieptų statyba draudžiama. Tačiau Jums tai negalioja!</p>
+            <p class="card-text__paragraph">Su savivaldybe suderinome liepto statybos vietą kvartalo gyventojams.</p>
           </div>
         </div>
-        <div class="adv-group">
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
+        <div class="card">
+          <div class="card__image"><img src="../img/panorama.jpg" alt="advantages image"/></div><span class="card__headline">PANORAMA</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Jūsų terasose atsivers vaizdas į Nevėžio upės slėnį, nes statybų zonos numatytos aukščiausioje teritorijos dalyje.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image"><img src="../img/saules-kryptis.jpg" alt="advantages image"/></div><span class="card__headline">SAULĖS KRYPTIS</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Dieną mėgaukitės Pietinės Saulės spinduliais. Vakarais stebėkite besileidžiančią Saulę upės horizonte.</p>
+            <p class="card-text__paragraph">Paryčiais Saulė pradeda kilti nuo gatvės pusės. Dienos metu ji pakyla tiesiai virš sklypų, o vakare nusileidžia "į upę".</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image"><img src="../img/nuosava-pakrante.jpg" alt="advantages image"/></div><span class="card__headline">NUOSAVA PAKRANTĖ</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Visi sklypai ribojasi su Nevėžio upe. Turėsite privatų tiesioginį patekimą prie upės.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card__image"><img src="../img/fishes.jpg" alt="advantages image"/></div><span class="card__headline">ČIA KIMBA ŽUVYS</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Ištraukite meškeres, nes čia - kimba! Čia migruoja karšiai ir žiobriai, žvejyba aktyvi balandžio - rugpjūčio mėn.</p>
+            <p class="card-text__paragraph">Žvejokite patys, kvieskite svečius. Po sėkmingos žūklės vaišinkitės pačių sugauta šviežia žuvimi, išrūkintoje jūsų privačioje rūkykloje.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image"><img src="../img/river-boat.jpg" alt="advantages image"/></div><span class="card__headline">KELIAUKITE BAIDARE</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Keliaukite baidarėmis su šeima ir draugais. Arba išnuomokite savo baidares kitiems.</p>
+            <p class="card-text__paragraph">Nevėžio upe vykdomi plaukimai baidarėmis Kaune, Krekenavoje ir Panevėžyje.</p>
+            <p class="card-text__paragraph">Gal būsite pirmieji pasiūlę baidarių nuomą Kėdainiškiams?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image"><img src="../img/street.jpg" alt="advantages image"/></div><span class="card__headline">ARTI MIESTO</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Būsite kaime, bet nenutolsite nuo civilizacijos: už 9 min. kelio Kėdainiuose gausite visas miesto paslaugas.</p>
             <ul>
-              <li></li>
+              <li>Išpuoselėtas senamiestis</li>
+              <li>Didieji prekybos centrai </li>
+              <li>Maitinimas</li>
+              <li>Visos kasdienės paslaugos</li>
+              <li>Ligoninė ir poliklinika</li>
+              <li>Lankytini objektai ir pramogos</li>
             </ul>
           </div>
-          <div class="adv-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-            <p class="adv-card__paragraph"></p>
+        </div>
+        <div class="card">
+          <div class="card__image"><img src="../img/map-static.jpg" alt="advantages image"/></div><span class="card__headline">GREITAS SUSISIEKIMAS</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Nuo Kauno m. centro iki sklypo - 1 val. kelio greitkeliu A1.</p>
             <ul>
-              <li></li>
+              <li>Kaunas - 60 km (1 val.)</li>
+              <li>Kėdainiai - 5 km (9 min.)</li>
+              <li>Jonava - 40 km (30 min.)</li>
+              <li>Panevėžys - 60 km (40 min.)</li>
+              <li>Šiauliai - 100 km (1 val. 20 min.)</li>
+              <li>Vilnius - 150 km (1 val. 40 min.)</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="wrap_container infrastructure-screen"><span class="section-headline"></span>
-      <div class="card-wrapper"> 
-        <div class="infr-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-          <p class="adv-card__paragraph"></p>
+    <section class="wrap_container infrastructure-screen">
+      <h2 class="section-headline">INFRASTRUKTŪRA</h2>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card__image"><img src="../img/electro.jpg" alt="infrastructure image"/></div><span class="card__headline">ELEKTRA</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Kiekvienas sklypas pajungtas į ESO tinklą.</p>
+          </div>
         </div>
-        <div class="infr-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-          <p class="adv-card__paragraph"></p>
+        <div class="card">
+          <div class="card__image"><img src="../img/road.jpg" alt="infrastructure image"/></div><span class="card__headline">ASFALTAS</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Asfaltuota Melioratorių g. ribojasi su sklypu.</p>
+          </div>
         </div>
-        <div class="infr-card"><img class="adv-card__image" src="" alt="advantages image"><span class="adv-card__headline"></span>
-          <p class="adv-card__paragraph"></p>
+        <div class="card">
+          <div class="card__image"><img src="../img/road-sign.jpg" alt="infrastructure image"/></div><span class="card__headline">AUTOBUSAS</span>
+          <div class="card-text">
+            <p class="card-text__paragraph">Autobusų stotelė prie pat sklypo ribos.</p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="wrap_container gallery-screen"><span class="section-headline"></span>
+    <section class="wrap_container gallery-screen">
+      <h2 class="section-headline">NUOTRAUKŲ GALERIJA</h2>
       <div class="photo-group">
-        <div class="photo-group vertical"><img class="photo-group__image--vert" src="" alt=""><img class="photo-group__image--vert" src="" alt=""></div><img class="photo-group__image" src="" alt="">
+        <div class="photo"><img src="../img/river1.jpg"/></div>
+        <div class="photo"><img src="../img/gallery3.jpg"/></div>
+        <div class="photo"><img src="../img/gallery2.jpg"/></div>
       </div>
     </section>
-    <section class="wrap_container area-screen"><span class="section-headline"></span><img class="area-screen__photo">
+    <section class="wrap_container area-screen">
+      <h2 class="section-headline">IŠSIRINKITE SAVO SKLYPĄ</h2><img class="area-screen__photo" src="../img/sectors.jpg"/>
       <table class="area-prices-list">
+        <tr class="head"> 
+          <td>Sklypas</td>
+          <td>Plotas, a</td>
+          <td>Kaina, €</td>
+          <td>Būsena</td>
+        </tr>
         <tr>
           <td>1</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>66.73				</td>
+          <td>13 400</td>
+          <td>Laisvas</td>
         </tr>
         <tr>
           <td>2</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>70.22				</td>
+          <td>14 050</td>
+          <td>Laisvas</td>
         </tr>
         <tr>
           <td>3</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>71.39		</td>
+          <td>14 300</td>
+          <td>Laisvas</td>
         </tr>
         <tr>
           <td>4</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>78.21		</td>
+          <td>14 950</td>
+          <td>Laisvas</td>
         </tr>
         <tr>
           <td>5</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>85.64		</td>
+          <td>15 500</td>
+          <td>Laisvas</td>
         </tr>
         <tr>
           <td>6</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>87.72		</td>
+          <td>15 900</td>
+          <td>Laisvas</td>
         </tr>
         <tr>
           <td>7</td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
+          <td>96.61		</td>
+          <td>16 500</td>
+          <td>Laisvas</td>
         </tr>
       </table>
     </section>
-    <section class="wrap_container form-screen"><img class="form-section__image" src="" alt="seller Gediminas"><span class="form-title"></span><span class="form-subtitle"></span>
-      <form method="POST">
-        <input type="name" name="name" placeholder="">
-        <input type="email" name="email" placeholder="">
-        <input type="tel" name="number" placeholder="">
-        <button type="sumbit"></button>
-      </form>
+    <section class="wrap_container form-screen"><img class="form-section__image" src="../img/seller.jpg" alt="seller Gediminas"/>
+      <div> 
+        <h1 class="form-title">TURITE KLAUSIMŲ? SUSISIEKIME</h1>
+        <p class="form-subtitle">Įveskite savo kontaktinius duomenis ir mes netrukus susisieksime su Jumis!</p>
+        <form method="POST">
+          <input type="name" name="name" placeholder="Jūsų vardas"/>
+          <input type="email" name="email" placeholder="Jūsų el. paštas"/>
+          <input type="tel" name="number" placeholder="Jūsų telefono numeris"/>
+          <button type="sumbit">SIŲSTI</button>
+        </form>
+      </div>
     </section>
-    <footer class="footer">2021<a class="footer__link" href="#"> </a><a class="footer__link" href="#"> </a></footer>
+    <footer class="footer">2021<a class="footer__link" href="#">Kaimietukas</a><span>|</span><a class="footer__link" href="#">Privatumo politika </a></footer>
   </body>
 </html>

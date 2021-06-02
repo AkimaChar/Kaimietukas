@@ -20,11 +20,13 @@ body {
 
 ul {
   list-style: square inside;
+
   li {
     margin-top: 0.3vw;
     font-family: "Open Sans";
     line-height: 1.6;
     font-size: 13pt;
+
     a {
       font-family: "Open Sans";
       line-height: 1.6;
@@ -56,7 +58,11 @@ ul {
 }
 
 .nav-bar__button:nth-of-type(2) {
-  margin: 0 0.6vw;
+  margin: 0 25px;
+}
+
+.nav-bar__button:nth-of-type(3) {
+  margin-right: 15px;
 }
 
 .nav-bar__button--active {
@@ -86,7 +92,8 @@ ul {
 }
 
 .logo__image {
-  max-height: 2.92vw;
+  width: 66px;
+  height: 56px;
   max-width: 11.72vw;
   padding: 0.42vw 0.21vw 0.42vw 0.63vw;
 }
@@ -115,10 +122,10 @@ a {
 h1 {
   color: #fff;
   text-align: center;
-  font-size: 5.3vw;
+  font-size: 60pt;
   font-variant-ligatures: none;
   font-weight: 400;
-  line-height: 6.3vw;
+  line-height: 1.2;
   margin: 0;
   width: 61%;
 }
@@ -151,6 +158,7 @@ h1 {
   justify-content: space-between;
   gap: 1.8vw;
   padding: 1.5rem 0;
+
   .intro-screen__image {
     background-image: url(../../img/river.png);
     background-repeat: no-repeat;
@@ -159,19 +167,23 @@ h1 {
     width: 41.777%;
     height: 18vw;
   }
+
   .intro-text {
     width: 58.333%;
+
     .intro-text__paragraph {
       font-size: 3.5vw;
       font-weight: 400;
       line-height: 4.2vw;
       margin: 1vw 0 2vw 0;
     }
+
     .intro-text__text {
       margin-top: 0.8vw;
       font-family: "Open Sans";
       line-height: 1.6;
       font-size: 13pt;
+
       &:first-of-type {
         margin: 0;
       }
@@ -185,12 +197,15 @@ h1 {
   justify-content: space-between;
   gap: 1.8vw;
   padding: 1.5rem 0;
+
   iframe {
     width: 41.777%;
     height: 18vw;
   }
+
   .facts-text {
     width: 58.333%;
+
     .facts-text__headline {
       font-size: 29pt;
       font-weight: 400;
@@ -209,23 +224,28 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 2.5vw;
 }
+
 .card-wrapper {
   display: grid;
   gap: 1.54vw;
+
   .card {
     width: 100%;
     padding-bottom: 3vw;
+
     .card__image {
       width: 100%;
       height: 23vw;
       background-color: #ccc;
       margin-bottom: 0.7vw;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
+
     .card__headline {
       display: block;
       font-size: 29pt;
@@ -235,14 +255,16 @@ h1 {
       text-align: center;
       margin-bottom: 1.45vw;
     }
+
     .card-text {
       display: flex;
       flex-direction: column;
       gap: 13pt;
+
       .card-text__paragraph {
         font-family: "Open Sans";
-        font-size: 1.25vw;
-        line-height: 1.38;
+        font-size: 13pt;
+        line-height: 1.6;
       }
     }
   }
@@ -250,10 +272,12 @@ h1 {
 
 .advantages_screen {
   margin-top: 2.5vw;
+
   .card-wrapper {
     &:first-of-type {
       grid-template-columns: 1fr 1fr 1fr;
     }
+
     &:last-of-type {
       margin-top: 4vw;
       grid-template-columns: 1fr 1fr;
@@ -263,6 +287,7 @@ h1 {
 
 .infrastructure-screen {
   margin-top: 2.5vw;
+
   .card-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -270,18 +295,22 @@ h1 {
 
 .gallery-screen {
   margin-top: 3vw;
+
   .photo-group {
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 19vw 19vw;
     gap: 1.54vw;
+
     .photo {
       width: 100%;
       height: 100%;
+
       &:nth-of-type(2) {
         grid-row: 1/3;
         grid-column: 2;
       }
+
       img {
         width: 100%;
         height: 100%;
@@ -296,23 +325,28 @@ h1 {
   padding-bottom: 2.5vw;
   border-bottom: 3px solid rgba(255, 82, 82, 0.8);
   position: relative;
+
   #sectors {
     position: absolute;
     top: -6vw;
     left: 0;
   }
+
   .area-screen__photo {
     width: 100%;
     margin-bottom: 2.5vw;
   }
+
   .area-prices-list {
     border-spacing: 40px 15px;
+
     tr {
       td {
         font-size: 13pt;
         line-height: 1.6;
         font-family: "Open Sans";
       }
+
       &.head td {
         font-weight: bold;
       }
@@ -324,9 +358,11 @@ h1 {
   padding-top: 2vw;
   display: flex;
   gap: 2vw;
+
   .form-section__image {
     width: 40%;
   }
+
   .form-title {
     font-size: 3.5vw;
     font-weight: 400;
@@ -336,17 +372,20 @@ h1 {
     width: auto;
     margin-bottom: 2vw;
   }
+
   .form-subtitle,
   .form-subtitle b {
     font-family: "Open Sans";
     font-size: 13pt;
   }
+
   form {
     margin-top: 2vw;
     display: flex;
     flex-direction: column;
     max-width: 360px;
     gap: 17px;
+
     input {
       border: 1px solid #979797;
       border-radius: 0.4vw;
@@ -355,6 +394,7 @@ h1 {
       font-size: 1.3vw;
       line-height: 160%;
     }
+
     button {
       margin-top: 20px;
       padding: 0.8vw 1.1vw;
@@ -380,6 +420,7 @@ h1 {
   margin-top: 4vw;
   font-size: 9pt;
   line-height: 1.2;
+
   a {
     font-size: 9pt;
     line-height: 1.2;
@@ -389,6 +430,7 @@ h1 {
 
 main {
   padding-top: 3vw;
+
   .section-title {
     font-size: 38pt;
     line-height: 1.23;
@@ -396,19 +438,23 @@ main {
     text-transform: uppercase;
     margin-bottom: 2vw;
   }
+
   p.text {
     font-size: 13pt;
     line-height: 150%;
     font-family: Open Sans;
   }
+
   .article {
     margin-top: 2vw;
+
     .acticle-title {
       font-weight: 400;
       font-size: 35pt;
       line-height: 1.2;
       margin-bottom: 1.9vw;
     }
+
     ul {
       margin-bottom: 1vw;
     }

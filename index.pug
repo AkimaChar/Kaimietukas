@@ -9,6 +9,7 @@ html(lang="lt")
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
         link(rel="stylesheet" href="../style/dist/style.css")
+        link(rel="stylesheet" href="../style/dist/mobile.css")
         script(src="../script/dist/script.dev.js" defer) 
         title Kaimietukas
     body#body
@@ -217,47 +218,48 @@ html(lang="lt")
             h2.section-headline
                 |IŠSIRINKITE SAVO SKLYPĄ
             img.area-screen__photo(src="../img/sectors.jpg")
-            table.area-prices-list
-                tr.head 
-                    td Sklypas
-                    td Plotas, a
-                    td Kaina, €
-                    td Būsena
-                tr
-                    td 1
-                    td 66.73				
-                    td 13 400
-                    td Laisvas
-                tr
-                    td 2
-                    td 70.22				
-                    td 14 050
-                    td Laisvas
-                tr
-                    td 3
-                    td 71.39		
-                    td 14 300
-                    td Laisvas
-                tr
-                    td 4
-                    td 78.21		
-                    td 14 950
-                    td Laisvas
-                tr
-                    td 5
-                    td 85.64		
-                    td 15 500
-                    td Laisvas
-                tr
-                    td 6
-                    td 87.72		
-                    td 15 900
-                    td Laisvas
-                tr
-                    td 7
-                    td 96.61		
-                    td 16 500
-                    td Laisvas
+            div.area-prices-list__wrap
+                table.area-prices-list
+                    tr.head 
+                        td Sklypas
+                        td Plotas, a
+                        td Kaina, €
+                        td Būsena
+                    tr
+                        td 1
+                        td 66.73				
+                        td 13 400
+                        td Laisvas
+                    tr
+                        td 2
+                        td 70.22				
+                        td 14 050
+                        td Laisvas
+                    tr
+                        td 3
+                        td 71.39		
+                        td 14 300
+                        td Laisvas
+                    tr
+                        td 4
+                        td 78.21		
+                        td 14 950
+                        td Laisvas
+                    tr
+                        td 5
+                        td 85.64		
+                        td 15 500
+                        td Laisvas
+                    tr
+                        td 6
+                        td 87.72		
+                        td 15 900
+                        td Laisvas
+                    tr
+                        td 7
+                        td 96.61		
+                        td 16 500
+                        td Laisvas
         section.wrap_container.form-screen#contact
             img.form-section__image(src="../img/seller.jpg" alt="seller Gediminas")
             div 

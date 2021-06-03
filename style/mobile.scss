@@ -4,6 +4,19 @@
     }
 }
 
+@media (max-width: 900px) {
+    .wrap_container {
+        width: 90%;
+    }
+
+    .intro-screen.wrap_container .intro-text .intro-text__paragraph {
+        font-size: 4.9vw;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 1vw 0 2vw 0;
+    }
+}
+
 @media (max-width:767px) {
     .intro-screen {
         flex-direction: column;
@@ -14,13 +27,23 @@
     }
 
     .intro-screen.wrap_container .intro-screen__image {
-        width: 75%;
+        width: 100%;
         height: 33vw;
+    }
+
+    .facts-screen.wrap_container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .intro-screen.wrap_container .intro-text .intro-text__paragraph {
         font-size: 33pt;
         line-height: 1.2;
+    }
+
+    .facts-screen.wrap_container iframe {
+        width: 100%;
+        height: 38vw;
     }
 
     .hello-screen__line {
@@ -30,6 +53,30 @@
     h1 {
         width: 81%;
         font-size: 51pt;
+    }
+
+    .form-screen form input {
+        border: 1px solid #979797;
+        padding: 1.3vw 3vw;
+        font-family: Open Sans;
+        font-size: 3vw;
+        line-height: 1.2;
+    }
+
+    .form-screen form button {
+        margin-top: 0px;
+        padding: 2vw 1.1vw;
+        font-family: Open Sans;
+        font-size: 2.5vw;
+    }
+
+}
+
+@media (max-width:570px) {
+    header.header {
+        height: 100%;
+        width: 10%;
+        flex-direction: column;
     }
 }
 
@@ -93,6 +140,10 @@
         height: initial;
     }
 
+    .form-screen .form-section__image {
+        width: initial;
+    }
+
     .area-prices-list__wrap {
         max-width: 320px;
         width: 100%;
@@ -113,6 +164,21 @@
     .form-screen,
     .facts-screen.wrap_container {
         flex-direction: column;
+    }
+
+    .form-screen form input {
+        border: 1px solid #979797;
+        padding: 6vw 3vw;
+        font-family: Open Sans;
+        font-size: 5vw;
+        line-height: 1.2;
+    }
+
+    .form-screen form button {
+        margin-top: 0px;
+        padding: 5vw 1vw;
+        font-size: 5vw;
+        line-height: 160%;
     }
 
     h1 {

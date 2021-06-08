@@ -35,10 +35,11 @@ for (let anchor of anchors) {
     e.target.style.color = "#ffffffff";
 
     const blockID = anchor.getAttribute("href");
-    document.querySelector(blockID).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+
+    const yOffset = document.querySelector('#header').getBoundingClientRect().height;
+    const element = document.querySelector(blockID);
+    const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
   });
 }
 

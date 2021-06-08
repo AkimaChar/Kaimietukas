@@ -297,8 +297,6 @@ h1 {
 
 .area-screen {
   margin-top: 2.5vw;
-  padding-bottom: 2.5vw;
-  border-bottom: 3px solid rgba(255, 82, 82, 0.8);
   position: relative;
 }
 .area-screen #sectors {
@@ -324,14 +322,16 @@ h1 {
 
 .form-screen {
   padding-top: 2vw;
+  margin-top: 2.5vw;
   display: flex;
   gap: 2vw;
+  border-top: 3px solid rgba(255, 82, 82, 0.8);
 }
 .form-screen .form-section__image {
   width: 40%;
 }
 .form-screen .form-title {
-  font-size: 3.5vw;
+  font-size: 2.8vw;
   font-weight: 400;
   line-height: 4.2vw;
   color: #1f1f1f;
@@ -356,14 +356,14 @@ h1 {
   border-radius: 0.4vw;
   padding: 0.6vw 1.1vw;
   font-family: Open Sans;
-  font-size: 1.3vw;
+  font-size: 13pt;
   line-height: 160%;
 }
 .form-screen form button {
   margin-top: 20px;
   padding: 0.8vw 1.1vw;
   font-family: Open Sans;
-  font-size: 1.3vw;
+  font-size: 13pt;
   line-height: 160%;
   text-align: center;
   background: #d3413f;

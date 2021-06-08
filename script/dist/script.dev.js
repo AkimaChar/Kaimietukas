@@ -48,9 +48,12 @@ try {
       e.target.classList.add("nav-bar__button--active");
       e.target.style.color = "#ffffffff";
       var blockID = anchor.getAttribute("href");
-      document.querySelector(blockID).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+      var yOffset = document.querySelector('#header').getBoundingClientRect().height;
+      var element = document.querySelector(blockID);
+      var y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
       });
     });
   };

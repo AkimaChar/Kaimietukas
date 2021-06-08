@@ -10,14 +10,37 @@ html(lang="lt")
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
         link(rel="stylesheet" href="../style/dist/style.css")
         link(rel="stylesheet" href="../style/dist/mobile.css")
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
         script(src="../script/dist/script.dev.js" defer) 
         title Kaimietukas
     body#body
+        
+
         header.header#header
-            .cross 
+            .cross#open
+                <svg class="wFCWne o0iVae" viewBox="0 0 24 24" stroke="currentColor" jsname="B1n9ub" focusable="false">
+                    <g transform="translate(12,12)">
+                        <path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path>
+                        <path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path>
+                        <path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path>
+                    </g>
+                </svg>
             a.logo(href="#")
                 img.logo__image(src="../img/kaimietukas-logo-5.png")
                 span.logo__text Kaimietukas
+            nav.nav-bar#nav
+                a.nav-bar__button--active.scroll-to(href="#home") Home
+                a.nav-bar__button.scroll-to(href="#sectors") Išsirinkite sklypą
+                a.nav-bar__button.scroll-to(href="#contact") Susisiekime
+        .burger-menu
+            .cross#close
+                <svg class="wFCWne o0iVae" viewBox="0 0 24 24" stroke="currentColor" jsname="B1n9ub" focusable="false">
+                    <g transform="translate(12,12)">
+                        <path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path>
+                        <path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path>
+                        <path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path>
+                    </g>
+                </svg>
             nav.nav-bar#nav
                 a.nav-bar__button--active.scroll-to(href="#home") Home
                 a.nav-bar__button.scroll-to(href="#sectors") Išsirinkite sklypą

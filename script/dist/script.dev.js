@@ -74,8 +74,10 @@ try {
 }
 
 $(document).ready(function () {
-  $('.cross').click(function () {
-    $(this).parent().toggleClass('mobileHeader');
-    ;
+  $('#open').click(function () {
+    $('.burger-menu').toggleClass('show_burger');
+  });
+  $('#close').click(function () {
+    $('.burger-menu').toggleClass('show_burger');
   });
 });

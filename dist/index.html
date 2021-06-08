@@ -8,15 +8,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/dist/style.css"/>
-    <link rel="stylesheet" href="../style/dist/mobile.css"/>
+    <link rel="stylesheet" href="../style/dist/mobile.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
     <script src="../script/dist/script.dev.js" defer="defer"> </script>
     <title>Kaimietukas</title>
   </head>
   <body id="body">
     <header class="header" id="header">
-      <div class="cross"> </div><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"/><span class="logo__text">Kaimietukas</span></a>
+      <div class="cross" id="open"><svg class="wFCWne o0iVae" viewBox="0 0 24 24" stroke="currentColor" jsname="B1n9ub" focusable="false">
+<g transform="translate(12,12)">
+<path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path>
+<path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path>
+<path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path>
+</g>
+</svg>
+      </div><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"/><span class="logo__text">Kaimietukas</span></a>
       <nav class="nav-bar" id="nav"><a class="nav-bar__button--active scroll-to" href="#home">Home</a><a class="nav-bar__button scroll-to" href="#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="#contact">Susisiekime</a></nav>
     </header>
+    <div class="burger-menu">
+      <div class="cross" id="close"><svg class="wFCWne o0iVae" viewBox="0 0 24 24" stroke="currentColor" jsname="B1n9ub" focusable="false">
+<g transform="translate(12,12)">
+<path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path>
+<path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path>
+<path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path>
+</g>
+</svg>
+      </div>
+      <nav class="nav-bar" id="nav"><a class="nav-bar__button--active scroll-to" href="#home">Home</a><a class="nav-bar__button scroll-to" href="#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="#contact">Susisiekime</a></nav>
+    </div>
     <section class="hello-screen" id="home">
       <div class="hello-screen__wrapper" id="bgToScroll">
         <div class="wrap_container hello-screen__content">

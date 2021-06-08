@@ -41,3 +41,10 @@ for (let anchor of anchors) {
     });
   });
 }
+
+
+$(document).ready(function () {
+  $('.cross').click(function () {
+    $(this).parent().toggleClass('mobileHeader');;
+  })
+})

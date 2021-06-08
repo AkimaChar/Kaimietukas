@@ -72,3 +72,10 @@ try {
     }
   }
 }
+
+$(document).ready(function () {
+  $('.cross').click(function () {
+    $(this).parent().toggleClass('mobileHeader');
+    ;
+  });
+});

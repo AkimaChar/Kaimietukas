@@ -113,10 +113,23 @@
     padding: 5px;
   }
 
+  .show_header {
+    margin-top: -1000px;
+  }
+
+  .nav--black a:not(:first-of-type) {
+    color: black;
+  }
+
   .show_burger {
     transition: 0.2s ease;
     margin-left: initial;
     box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #close img, #open img {
+    height: 20px;
+    width: 20px;
   }
 
   .header nav {
@@ -143,10 +156,19 @@
     z-index: 100000;
   }
 
-  .cross {
+  .black-line {
+    color: black;
+  }
+
+  .cross, .cross svg path {
     display: block;
     height: 24px;
-    width: 24px;
+    width: 30px;
+    color: white;
+  }
+
+  .cross svg path:nth-of-type(2) {
+    margin: 0;
   }
 }
 @media (max-width: 490px) {

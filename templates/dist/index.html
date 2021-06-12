@@ -4,12 +4,12 @@
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/dist/style.css"/>
-    <link rel="stylesheet" href="../style/dist/mobile.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
-    <script src="../script/dist/script.dev.js" defer="defer"> </script>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style/dist/style.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style/dist/mobile.css') }}"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
+    <script src="{{ url_for('static', path='/script/dist/script.dev.js') }}" defer="defer"> </script>
     <title>Kaimietukas</title>
   </head>
   <body id="body">
@@ -21,12 +21,12 @@
 <path class="cLAGQe black-line" d="M-9 5 L9 5" fill="none" stroke-width="2"></path>
 </g>
 </svg>
-      </div><a class="logo" href="#"><img class="logo__image" src="../img/kaimietukas-logo-5.png"/><span class="logo__text">Kaimietukas</span></a>
-      <nav class="nav-bar" id="nav"><a class="nav-bar__button--active scroll-to" href="#home">Pradžia</a><a class="nav-bar__button scroll-to" href="#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="#contact">Susisiekime</a></nav>
+      </div><a class="logo" href="/"><img class="logo__image" src="{{ url_for('static', path='/img/kaimietukas-logo-5.png') }}"/><span class="logo__text">Kaimietukas</span></a>
+      <nav class="nav-bar" id="nav"><a class="nav-bar__button--active scroll-to" href="/">Pradžia</a><a class="nav-bar__button scroll-to" href="/#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="/#contact">Susisiekime</a></nav>
     </header>
     <div class="burger-menu">
-      <div class="cross" id="close"><img src="../img/cross-svgrepo-com.svg" alt=""/></div>
-      <nav class="nav-bar nav--black" id="nav"><a class="nav-bar__button--active scroll-to" href="#home">Pradžia</a><a class="nav-bar__button scroll-to" href="#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="#contact">Susisiekime</a></nav>
+      <div class="cross" id="close"><img src="{{ url_for('static', path='/img/cross-svgrepo-com.svg') }}" alt=""/></div>
+      <nav class="nav-bar nav--black" id="nav"><a class="nav-bar__button--active scroll-to" href="/">Pradžia</a><a class="nav-bar__button scroll-to" href="/#sectors">Išsirinkite sklypą</a><a class="nav-bar__button scroll-to" href="/#contact">Susisiekime</a></nav>
     </div>
     <section class="hello-screen" id="home">
       <div class="hello-screen__wrapper" id="bgToScroll">
@@ -69,7 +69,7 @@
       <h2 class="section-headline">PRIVALUMAI</h2>
       <div class="card-wrapper">
         <div class="card">
-          <div class="card__image"><img src="../img/galima-statiba.jpg" alt="advantages image"/></div><span class="card__headline">GALIMA STATYBA</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/galima-statiba.jpg') }}" alt="advantages image"/></div><span class="card__headline">GALIMA STATYBA</span>
           <div class="card-text">
             <p class="card-text__paragraph">Rasti sklypą prie upės ar ežero, kur statyba nedraužiama, yra didelis iššūkis.</p>
             <p class="card-text__paragraph">Šį galvosūkį išsprendėme už Jus!</p>
@@ -77,34 +77,34 @@
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/pirtis-paupije.jpg" alt="advantages image"/></div><span class="card__headline">PIRTIS PAUPYJE</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/pirtis-paupije.jpg') }}" alt="advantages image"/></div><span class="card__headline">PIRTIS PAUPYJE</span>
           <div class="card-text">
             <p class="card-text__paragraph">Žemutinėje sklypų dalyje galima lengvų konstrukcijų statinių statyba (pavėsinės, pirtys).</p>
             <p class="card-text__paragraph">Įsirenkite pirtį upės prieigose ir vėsinkitės gaiviu upės vandeniu.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/privatus-lieptas.jpg" alt="advantages image"/></div><span class="card__headline">PRIVATUS LIEPTAS</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/privatus-lieptas.jpg') }}" alt="advantages image"/></div><span class="card__headline">PRIVATUS LIEPTAS</span>
           <div class="card-text">
             <p class="card-text__paragraph">Lieptas - didelis išskirtinumas. Daugelyje vietų lieptų statyba draudžiama. Tačiau Jums tai negalioja!</p>
             <p class="card-text__paragraph">Su savivaldybe suderinome liepto statybos vietą kvartalo gyventojams.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/panorama.jpg" alt="advantages image"/></div><span class="card__headline">PANORAMA</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/panorama.jpg') }}" alt="advantages image"/></div><span class="card__headline">PANORAMA</span>
           <div class="card-text">
             <p class="card-text__paragraph">Jūsų terasose atsivers vaizdas į Nevėžio upės slėnį, nes statybų zonos numatytos aukščiausioje teritorijos dalyje.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/saules-kryptis.jpg" alt="advantages image"/></div><span class="card__headline">SAULĖS KRYPTIS</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/saules-kryptis.jpg') }}" alt="advantages image"/></div><span class="card__headline">SAULĖS KRYPTIS</span>
           <div class="card-text">
             <p class="card-text__paragraph">Dieną mėgaukitės Pietinės Saulės spinduliais. Vakarais stebėkite besileidžiančią Saulę upės horizonte.</p>
             <p class="card-text__paragraph">Paryčiais Saulė pradeda kilti nuo gatvės pusės. Dienos metu ji pakyla tiesiai virš sklypų, o vakare nusileidžia "į upę".</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/nuosava-pakrante.jpg" alt="advantages image"/></div><span class="card__headline">NUOSAVA PAKRANTĖ</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/nuosava-pakrante.jpg') }}" alt="advantages image"/></div><span class="card__headline">NUOSAVA PAKRANTĖ</span>
           <div class="card-text">
             <p class="card-text__paragraph">Visi sklypai ribojasi su Nevėžio upe. Turėsite privatų tiesioginį patekimą prie upės.</p>
           </div>
@@ -112,14 +112,14 @@
       </div>
       <div class="card-wrapper">
         <div class="card">
-          <div class="card__image"><img src="../img/fishes.jpg" alt="advantages image"/></div><span class="card__headline">ČIA KIMBA ŽUVYS</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/fishes.jpg') }}" alt="advantages image"/></div><span class="card__headline">ČIA KIMBA ŽUVYS</span>
           <div class="card-text">
             <p class="card-text__paragraph">Ištraukite meškeres, nes čia - kimba! Čia migruoja karšiai ir žiobriai, žvejyba aktyvi balandžio - rugpjūčio mėn.</p>
             <p class="card-text__paragraph">Žvejokite patys, kvieskite svečius. Po sėkmingos žūklės vaišinkitės pačių sugauta šviežia žuvimi, išrūkintoje jūsų privačioje rūkykloje.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/river-boat.jpg" alt="advantages image"/></div><span class="card__headline">KELIAUKITE BAIDARE</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/river-boat.jpg') }}" alt="advantages image"/></div><span class="card__headline">KELIAUKITE BAIDARE</span>
           <div class="card-text">
             <p class="card-text__paragraph">Keliaukite baidarėmis su šeima ir draugais. Arba išnuomokite savo baidares kitiems.</p>
             <p class="card-text__paragraph">Nevėžio upe vykdomi plaukimai baidarėmis Kaune, Krekenavoje ir Panevėžyje.</p>
@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/street.jpg" alt="advantages image"/></div><span class="card__headline">ARTI MIESTO</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/street.jpg') }}" alt="advantages image"/></div><span class="card__headline">ARTI MIESTO</span>
           <div class="card-text">
             <p class="card-text__paragraph">Būsite kaime, bet nenutolsite nuo civilizacijos: už 9 min. kelio Kėdainiuose gausite visas miesto paslaugas.</p>
             <ul>
@@ -141,7 +141,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/map-static.jpg" alt="advantages image"/></div><span class="card__headline">GREITAS SUSISIEKIMAS</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/map-static.jpg') }}" alt="advantages image"/></div><span class="card__headline">GREITAS SUSISIEKIMAS</span>
           <div class="card-text">
             <p class="card-text__paragraph">Nuo Kauno m. centro iki sklypo - 1 val. kelio greitkeliu A1.</p>
             <ul>
@@ -160,19 +160,19 @@
       <h2 class="section-headline">INFRASTRUKTŪRA</h2>
       <div class="card-wrapper">
         <div class="card">
-          <div class="card__image"><img src="../img/electro.jpg" alt="infrastructure image"/></div><span class="card__headline">ELEKTRA</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/electro.jpg') }}" alt="infrastructure image"/></div><span class="card__headline">ELEKTRA</span>
           <div class="card-text">
             <p class="card-text__paragraph">Kiekvienas sklypas pajungtas į ESO tinklą.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/road.jpg" alt="infrastructure image"/></div><span class="card__headline">ASFALTAS</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/road.jpg') }}" alt="infrastructure image"/></div><span class="card__headline">ASFALTAS</span>
           <div class="card-text">
             <p class="card-text__paragraph">Asfaltuota Melioratorių g. ribojasi su sklypu.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card__image"><img src="../img/road-sign.jpg" alt="infrastructure image"/></div><span class="card__headline">AUTOBUSAS</span>
+          <div class="card__image"><img src="{{ url_for('static', path='/img/road-sign.jpg') }}" alt="infrastructure image"/></div><span class="card__headline">AUTOBUSAS</span>
           <div class="card-text">
             <p class="card-text__paragraph">Autobusų stotelė prie pat sklypo ribos.</p>
           </div>
@@ -182,14 +182,14 @@
     <section class="wrap_container gallery-screen">
       <h2 class="section-headline">NUOTRAUKŲ GALERIJA</h2>
       <div class="photo-group">
-        <div class="photo"><img src="../img/river1.jpg"/></div>
-        <div class="photo"><img src="../img/gallery3.jpg"/></div>
-        <div class="photo"><img src="../img/gallery2.jpg"/></div>
+        <div class="photo"><img src="{{ url_for('static', path='/img/river1.jpg') }}"/></div>
+        <div class="photo"><img src="{{ url_for('static', path='/img/gallery3.jpg') }}"/></div>
+        <div class="photo"><img src="{{ url_for('static', path='/img/gallery2.jpg') }}"/></div>
       </div>
     </section>
     <section class="wrap_container area-screen"> 
       <div id="sectors"></div>
-      <h2 class="section-headline">IŠSIRINKITE SAVO SKLYPĄ</h2><img class="area-screen__photo" src="../img/sectors.jpg"/>
+      <h2 class="section-headline">IŠSIRINKITE SAVO SKLYPĄ</h2><img class="area-screen__photo" src="{{ url_for('static', path='/img/sectors.jpg') }}"/>
       <div class="area-prices-list__wrap">
         <table class="area-prices-list">
           <tr class="head"> 
@@ -243,18 +243,18 @@
         </table>
       </div>
     </section>
-    <section class="wrap_container form-screen" id="contact"><img class="form-section__image" src="../img/seller.jpg" alt="seller Gediminas"/>
+    <section class="wrap_container form-screen" id="contact"><img class="form-section__image" src="{{ url_for('static', path='/img/seller.jpg') }}" alt="seller Gediminas"/>
       <div> 
         <h1 class="form-title">TURITE KLAUSIMŲ? SUSISIEKIME</h1>
         <p class="form-subtitle">Įveskite savo kontaktinius duomenis ir mes netrukus susisieksime su Jumis!</p>
-        <form method="POST">
+        <form method="POST" action="/lead">
           <input type="name" name="name" placeholder="Jūsų vardas"/>
           <input type="email" name="email" placeholder="Jūsų el. paštas"/>
-          <input type="tel" name="number" placeholder="Jūsų telefono numeris"/>
+          <input type="tel" name="phone" placeholder="Jūsų telefono numeris"/>
           <button type="sumbit">SIŲSTI</button>
         </form>
       </div>
     </section>
-    <footer class="footer">2021<a class="footer__link scroll-to" href="#home">Kaimietukas</a><span>|</span><a class="footer__link" href="./privacy.html">Privatumo politika </a></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
+    <footer class="footer">2021<a class="footer__link scroll-to" href="/">Kaimietukas</a><span>|</span><a class="footer__link" href="/privacy">Privatumo politika </a></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
   </body>
 </html>
